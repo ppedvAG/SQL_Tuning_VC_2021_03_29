@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="2021_03_29_SQL_Tuning">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="WINDOWS10-LH2\SQL2019DEVELOPER:DOM-PPA01\lh2">
+          <Created>2021-03-29T14:15:12.9780404+02:00</Created>
+          <Type>SQL</Type>
+          <Server>WINDOWS10-LH2\SQL2019DEVELOPER</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="001_SSMS_Settings.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WINDOWS10-LH2\SQL2019DEVELOPER:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WINDOWS10-LH2\SQL2019DEVELOPER</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>001_SSMS_Settings.sql</FullPath>
+        </FileNode>
+        <FileNode Name="002_Theorie.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WINDOWS10-LH2\SQL2019DEVELOPER:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WINDOWS10-LH2\SQL2019DEVELOPER</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>002_Theorie.sql</FullPath>
+        </FileNode>
+        <FileNode Name="003_Procedure.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WINDOWS10-LH2\SQL2019DEVELOPER:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WINDOWS10-LH2\SQL2019DEVELOPER</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>003_Procedure.sql</FullPath>
+        </FileNode>
+        <FileNode Name="004_Query_Store_Uebungen.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WINDOWS10-LH2\SQL2019DEVELOPER:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WINDOWS10-LH2\SQL2019DEVELOPER</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>004_Query_Store_Uebungen.sql</FullPath>
+        </FileNode>
+        <FileNode Name="005_Partition.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WINDOWS10-LH2\SQL2019DEVELOPER:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WINDOWS10-LH2\SQL2019DEVELOPER</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>005_Partition.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Bonus_Having.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WINDOWS10-LH2\SQL2019DEVELOPER:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WINDOWS10-LH2\SQL2019DEVELOPER</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Bonus_Having.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>
