@@ -13,7 +13,12 @@
 		-- hypothetisch realer Index
 
 
--- Columnstore Index -->
+-- Columnstore Index --> Big Data; Data Warehouse; Archivdaten
+-- CI wartet mit Update/Komprimierung bis 1 Mio Datensätze erreicht werden (oder bis 140000 am Stück hereinkommen)
+-- somit werden Abfragen immer langsamer, weil ausgelagerte Daten gesucht werden müssen
+
+
+
 
 
 
@@ -106,3 +111,41 @@ INCLUDE ([CustomerID],[CompanyName],[ContactName],[ContactTitle],[City],[Country
 
 
 SELECT * FROM ku3 WHERE Freight < 1
+
+-- logical reads 61760
+-- 1222 ms
+-- table scan
+
+
+-- columnstore ix
+
+SELECT * FROM ku3 WHERE Freight < 1
+-- 1743 ms
+-- 1560 ms
+
+
+
+dbcc showcontig('ku2')
+
+
+
+-- MAXDOP
+
+-- Maximum Degree of Parallelism
+
+SELECT COUNT(*) FROM KundenUmsatz
+
+
+
+
+-- Indizes anschauen:
+select    iu.object_id
+		, type_desc
+		, name
+		, iu.index_id
+		, user_seeks
+		, user_scans
+		, last_user_scan
+		, last_user_seek		
+from sys.indexes si Inner join sys.dm_db_index_usage_stats iu on si.index_id = iu.index_id
+where name like '%ix%'
